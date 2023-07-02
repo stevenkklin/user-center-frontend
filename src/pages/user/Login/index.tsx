@@ -3,7 +3,7 @@ import { Alert, Divider, message, Space, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { LoginForm, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import { history, useModel } from 'umi';
-import { PLANET_LINK, STEVEN_WECHAT, SYSTEM_LOGO } from '@/constants';
+import {  STEVEN_WECHAT, SYSTEM_LOGO } from '@/constants';
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
 import styles from './index.less';
@@ -23,7 +23,7 @@ const LoginMessage: React.FC<{
 );
 
 const Login: React.FC = () => {
-  const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
+  const [userLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
   const { initialState, setInitialState } = useModel('@@initialState');
 
