@@ -69,7 +69,7 @@ const Login: React.FC = () => {
         <LoginForm
           logo={<img alt="logo" src={SYSTEM_LOGO} />}
           title="ISME"
-          subTitle={'FJUT海研院是全球最具有影响力的海洋研究院'}
+          subTitle={'计算机007课题组成员管理系统'}
           initialValues={{
             autoLogin: true,
           }}
